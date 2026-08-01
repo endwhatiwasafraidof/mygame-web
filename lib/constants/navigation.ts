@@ -31,25 +31,25 @@ export const socialLinks: SocialLink[] = [
   {
     title: "Discord",
     subtitle: "Голосовой центр и живая координация игроков",
-    href: "https://discord.com",
+    href: "https://discord.gg/Hdwjqvryfp",
     icon: Disc3,
   },
   {
     title: "Telegram",
     subtitle: "Новости, анонсы обновлений и быстрые уведомления",
-    href: "https://t.me",
+    href: "https://t.me/mygame_stories",
     icon: Send,
   },
   {
     title: "VK",
     subtitle: "Сообщество проекта, медиа и связь с комьюнити",
-    href: "https://vk.com",
+    href: "https://vk.ru/mygame.stories",
     icon: MessageSquareText,
   },
   {
     title: "YouTube",
     subtitle: "Трейлеры, ролики с сервера и игровые истории",
-    href: "https://youtube.com",
+    href: "https://www.youtube.com/@mygame-stories",
     icon: Youtube,
   },
 ];

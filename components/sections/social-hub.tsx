@@ -49,7 +49,7 @@ export function SocialHub() {
                   </div>
                   <Link
                     className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-orange-500/40 bg-orange-500/20 text-orange-100 shadow-glow transition hover:scale-105 hover:bg-orange-500/30"
-                    href="https://youtube.com"
+                    href="https://www.youtube.com/@mygame-stories"
                     rel="noreferrer"
                     target="_blank"
                   >
