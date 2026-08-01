@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { ProjectLogo } from "@/components/ui/project-logo";
 import { footerLinks, footerMeta, socialLinks } from "@/lib/constants/navigation";
 
 export function Footer() {
@@ -8,17 +9,7 @@ export function Footer() {
       <div className="mx-auto max-w-shell px-4 py-16 md:px-6">
         <div className="grid gap-10 rounded-[32px] border border-white/5 bg-white/[0.02] p-8 shadow-panel lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div className="space-y-5">
-            <div className="flex items-center gap-3">
-              <span className="flex h-12 w-12 items-center justify-center rounded-2xl border border-orange-500/30 bg-orange-500/10 font-display text-lg text-orange-200 shadow-glow">
-                MG
-              </span>
-              <div>
-                <p className="font-display text-lg uppercase tracking-[0.24em] text-white">
-                  MyGame
-                </p>
-                <p className="text-sm text-zinc-400">Лендинг и веб-приложение проекта</p>
-              </div>
-            </div>
+            <ProjectLogo size="footer" />
             <p className="max-w-md text-sm leading-7 text-zinc-400">
               Платформа объединяет два игровых направления, быстрый вход в игру,
               новости комьюнити и удобный доступ к базе знаний.

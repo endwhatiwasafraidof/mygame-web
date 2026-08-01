@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Menu, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
+import { ProjectLogo } from "@/components/ui/project-logo";
 import { navigationItems, navbarActions } from "@/lib/constants/navigation";
 import { cn } from "@/lib/utils";
 
@@ -13,24 +14,20 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-white/5 bg-zinc-950/85 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-shell items-center justify-between gap-6 px-4 py-4 md:px-6">
-        <Link className="flex items-center gap-3" href="/">
-          <span className="flex h-11 w-11 items-center justify-center rounded-2xl border border-orange-500/30 bg-orange-500/15 font-display text-lg text-orange-200 shadow-glow">
-            MG
-          </span>
-          <div className="space-y-1">
-            <p className="font-display text-base uppercase tracking-[0.28em] text-white">
-              MyGame
-            </p>
-            <p className="text-xs text-zinc-400">Игровой портал нового поколения</p>
-          </div>
+      <div className="mx-auto flex max-w-shell items-center justify-between gap-8 px-4 py-4 md:px-6">
+        <Link
+          aria-label="Перейти на главную страницу"
+          className="flex items-center gap-2 transition-opacity hover:opacity-80"
+          href="/"
+        >
+          <ProjectLogo priority size="navbar" />
         </Link>
 
-        <nav className="hidden items-center gap-2 lg:flex">
+        <nav className="hidden items-center gap-5 xl:gap-6 lg:flex">
           {navigationItems.map((item) => (
             <Link
               key={item.label}
-              className="rounded-full px-4 py-2 text-sm text-zinc-300 transition hover:bg-white/5 hover:text-white"
+              className="rounded-full px-4 py-2.5 text-base font-medium text-zinc-300 transition hover:bg-white/5 hover:text-white"
               href={item.href}
               target={item.external ? "_blank" : undefined}
               rel={item.external ? "noreferrer" : undefined}
@@ -68,7 +65,7 @@ export function Navbar() {
           {navigationItems.map((item) => (
             <Link
               key={item.label}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/80 px-4 py-3 text-sm text-zinc-200 transition hover:border-orange-500/30 hover:text-white"
+              className="rounded-2xl border border-zinc-800 bg-zinc-900/80 px-4 py-3 text-base font-medium text-zinc-200 transition hover:border-orange-500/30 hover:text-white"
               href={item.href}
               onClick={() => setIsOpen(false)}
               target={item.external ? "_blank" : undefined}

@@ -3,6 +3,7 @@ import { Manrope, Orbitron } from "next/font/google";
 
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
+import { brandFaviconSrc, brandName } from "@/lib/constants/branding";
 
 import "./globals.css";
 
@@ -17,8 +18,12 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "MyGame",
-  description: "Игровой лендинг и веб-приложение проекта MyGame.",
+  title: brandName,
+  description: `Игровой лендинг и веб-приложение проекта ${brandName}.`,
+  icons: {
+    icon: [{ url: brandFaviconSrc, type: "image/x-icon", sizes: "any" }],
+    shortcut: [brandFaviconSrc],
+  },
 };
 
 export default function RootLayout({
