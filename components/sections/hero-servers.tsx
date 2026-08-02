@@ -55,7 +55,7 @@ export function HeroServers() {
 
                 <div className="space-y-8">
                   <div className="flex flex-wrap gap-4">
-                    <div className="min-w-[180px] rounded-[24px] border border-white/10 bg-black/20 p-5 backdrop-blur">
+                    <div className="min-w-[180px] rounded-[24px] border border-white/10 bg-zinc-900 p-5 backdrop-blur">
                       <p className="text-xs uppercase tracking-[0.24em] text-zinc-400">
                         Онлайн сейчас
                       </p>
@@ -68,7 +68,7 @@ export function HeroServers() {
                         </p>
                       </div>
                     </div>
-                    <div className="rounded-[24px] border border-white/10 bg-black/20 p-5 backdrop-blur">
+                    <div className="rounded-[24px] border border-white/10 bg-zinc-900 p-5 backdrop-blur">
                       <p className="text-xs uppercase tracking-[0.24em] text-zinc-400">
                         Формат
                       </p>

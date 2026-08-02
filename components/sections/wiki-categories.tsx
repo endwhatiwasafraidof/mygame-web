@@ -39,7 +39,7 @@ export function WikiCategories({ selectedSlug }: WikiCategoriesProps) {
                 </p>
               </div>
               <div className="grid gap-3">
-                <div className="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-4">
+                <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-4">
                   <div className="flex items-center gap-3">
                     <Compass className="h-5 w-5 text-orange-200" />
                     <div>
@@ -50,7 +50,7 @@ export function WikiCategories({ selectedSlug }: WikiCategoriesProps) {
                     </div>
                   </div>
                 </div>
-                <div className="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-4">
+                <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-4">
                   <div className="flex items-center gap-3">
                     <Sparkles className="h-5 w-5 text-orange-200" />
                     <div>
@@ -83,7 +83,7 @@ export function WikiCategories({ selectedSlug }: WikiCategoriesProps) {
                   className={cn(
                     "group h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-500/30 hover:bg-orange-500/5",
                     item.slug === activeCategory.slug &&
-                      "border-orange-500/30 bg-orange-500/10 shadow-glow",
+                      "border-orange-500/30 bg-orange-500/10",
                   )}
                 >
                   <div className="space-y-4">

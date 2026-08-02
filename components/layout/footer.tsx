@@ -7,9 +7,15 @@ export function Footer() {
   return (
     <footer className="border-t border-white/5 bg-zinc-950">
       <div className="mx-auto max-w-shell px-4 py-16 md:px-6">
-        <div className="grid gap-10 rounded-[32px] border border-white/5 bg-white/[0.02] p-8 shadow-panel lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
+        <div className="grid gap-10 rounded-[32px] border border-white/5 bg-zinc-900 p-8 shadow-panel lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div className="space-y-5">
-            <ProjectLogo size="footer" />
+            <Link
+              aria-label="Перейти на главную страницу"
+              className="flex items-center transition-opacity hover:opacity-80"
+              href="/"
+            >
+              <ProjectLogo size="footer" />
+            </Link>
             <p className="max-w-md text-sm leading-7 text-zinc-400">
               Платформа объединяет два игровых направления, быстрый вход в игру,
               новости комьюнити и удобный доступ к базе знаний.
@@ -51,7 +57,7 @@ export function Footer() {
                     <Link
                       key={item.title}
                       aria-label={item.title}
-                      className="flex h-12 w-12 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900/80 text-zinc-100 transition hover:border-orange-500/40 hover:bg-orange-500/10 hover:text-orange-200 hover:shadow-glow"
+                      className="flex h-12 w-12 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 text-zinc-100 transition hover:border-orange-500/40 hover:bg-orange-500/10 hover:text-orange-200"
                       href={item.href}
                       rel="noreferrer"
                       target="_blank"
@@ -70,7 +76,7 @@ export function Footer() {
                 return (
                   <div
                     key={item.title}
-                    className="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-4"
+                    className="rounded-2xl border border-zinc-800 bg-zinc-900 p-4"
                   >
                     <div className="flex items-center gap-3">
                       <span className="flex h-10 w-10 items-center justify-center rounded-xl border border-orange-500/20 bg-orange-500/10 text-orange-200">

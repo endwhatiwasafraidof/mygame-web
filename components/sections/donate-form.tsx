@@ -112,7 +112,7 @@ export function DonateForm() {
               </label>
 
               <div className="md:col-span-2">
-                <div className="flex flex-wrap items-center gap-4 rounded-[24px] border border-white/5 bg-white/[0.03] p-4">
+                <div className="flex flex-wrap items-center gap-4 rounded-[24px] border border-white/5 bg-zinc-900 p-4">
                   <Button size="lg" type="submit">
                     Перейти к оплате
                   </Button>
@@ -155,7 +155,7 @@ export function DonateForm() {
                 {donateMethods.map((item) => (
                   <div
                     key={item.label}
-                    className="rounded-2xl border border-zinc-800 bg-zinc-900/80 p-4"
+                    className="rounded-2xl border border-zinc-800 bg-zinc-900 p-4"
                   >
                     <p className="text-sm font-semibold text-white">{item.label}</p>
                     <p className="mt-1 text-sm leading-6 text-zinc-400">{item.description}</p>

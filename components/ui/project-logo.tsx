@@ -16,10 +16,9 @@ const sizeStyles = {
     sizes: "(max-width: 768px) 120px, 140px",
   },
   footer: {
-    frame:
-      "h-14 w-[180px] rounded-2xl px-4 sm:w-[220px] md:h-16 md:w-[260px] md:px-5",
-    image: "h-auto w-full max-h-9 md:max-h-11",
-    sizes: "(max-width: 640px) 180px, (max-width: 1024px) 220px, 260px",
+    frame: "shrink-0",
+    image: "h-12 w-auto md:h-14",
+    sizes: "(max-width: 768px) 120px, 140px",
   },
 };
 
@@ -29,17 +28,10 @@ export function ProjectLogo({
   size = "navbar",
 }: ProjectLogoProps) {
   const styles = sizeStyles[size];
-  const isNavbar = size === "navbar";
 
   return (
     <div className={cn("flex items-center", className)}>
-      <span
-        className={cn(
-          "flex items-center justify-center",
-          !isNavbar && "border border-orange-500/30 bg-orange-500/10 shadow-glow",
-          styles.frame,
-        )}
-      >
+      <span className={cn("flex items-center justify-center", styles.frame)}>
         <Image
           alt={`Логотип ${brandName}`}
           className={cn("object-contain", styles.image)}

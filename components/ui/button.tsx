@@ -14,7 +14,7 @@ const buttonVariants = cva(
         primary:
           "border-orange-500 bg-orange-500 px-6 py-3 text-orange-50 shadow-glow hover:border-orange-600 hover:bg-orange-600",
         ghost:
-          "border-zinc-800 bg-zinc-900/70 px-5 py-3 text-zinc-100 hover:border-zinc-700 hover:bg-zinc-800/80",
+          "border-zinc-800 bg-zinc-900 px-5 py-3 text-zinc-100 hover:border-zinc-700 hover:bg-zinc-800/80",
         outline:
           "border-orange-500/30 bg-transparent px-5 py-3 text-orange-100 hover:border-orange-500 hover:bg-orange-500/10",
       },

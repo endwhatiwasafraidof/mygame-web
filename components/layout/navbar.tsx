@@ -47,7 +47,7 @@ export function Navbar() {
         <button
           aria-expanded={isOpen}
           aria-label="Открыть меню"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900/80 text-zinc-100 transition hover:border-zinc-700 hover:bg-zinc-800 lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-zinc-800 bg-zinc-900 text-zinc-100 transition hover:border-zinc-700 hover:bg-zinc-800 lg:hidden"
           onClick={() => setIsOpen((prev) => !prev)}
           type="button"
         >
@@ -65,7 +65,7 @@ export function Navbar() {
           {navigationItems.map((item) => (
             <Link
               key={item.label}
-              className="rounded-2xl border border-zinc-800 bg-zinc-900/80 px-4 py-3 text-base font-medium text-zinc-200 transition hover:border-orange-500/30 hover:text-white"
+              className="rounded-2xl border border-zinc-800 bg-zinc-900 px-4 py-3 text-base font-medium text-zinc-200 transition hover:border-orange-500/30 hover:text-white"
               href={item.href}
               onClick={() => setIsOpen(false)}
               target={item.external ? "_blank" : undefined}

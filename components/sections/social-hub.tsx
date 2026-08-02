@@ -13,7 +13,7 @@ export function SocialHub() {
     <section className="py-16 md:py-20">
       <div className="mx-auto max-w-shell space-y-8 px-4 md:px-6">
         <SectionHeading
-          description="Соцсети проекта собраны в один центр: чат комьюнити, новости, медиа и видеоконтент. Каждый канал получает свой заметный hover-эффект со свечением."
+          description="Соцсети проекта собраны в один центр: чат комьюнити, новости, медиа и видеоконтент. Каждый канал сохраняет заметный, но сдержанный hover-акцент без лишнего свечения."
           eyebrow="Комьюнити и видео"
           title="Оставайтесь на связи с сервером"
         />
@@ -48,7 +48,7 @@ export function SocialHub() {
                     </p>
                   </div>
                   <Link
-                    className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-orange-500/40 bg-orange-500/20 text-orange-100 shadow-glow transition hover:scale-105 hover:bg-orange-500/30"
+                    className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border border-orange-500/40 bg-orange-500/20 text-orange-100 transition hover:scale-105 hover:bg-orange-500/30"
                     href="https://www.youtube.com/@mygame-stories"
                     rel="noreferrer"
                     target="_blank"
@@ -73,7 +73,7 @@ export function SocialHub() {
                   transition={{ duration: 0.4, delay: index * 0.08 }}
                 >
                   <Link href={item.href} rel="noreferrer" target="_blank">
-                    <Card className="group h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-500/30 hover:bg-orange-500/5 hover:shadow-glow">
+                    <Card className="group h-full p-6 transition duration-300 hover:-translate-y-1 hover:border-orange-500/30 hover:bg-orange-500/5">
                       <div className="space-y-6">
                         <span className="flex h-14 w-14 items-center justify-center rounded-2xl border border-orange-500/20 bg-orange-500/10 text-orange-200 transition group-hover:scale-105">
                           <Icon className="h-7 w-7" />
