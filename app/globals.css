@@ -43,3 +43,61 @@ a {
   background-color: rgba(249, 115, 22, 0.35);
   color: #fff7ed;
 }
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(249, 115, 22, 0.35) rgba(255, 255, 255, 0.03);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 9999px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, rgba(249, 115, 22, 0.45), rgba(249, 115, 22, 0.25));
+    border-radius: 9999px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgba(249, 115, 22, 0.6), rgba(249, 115, 22, 0.35));
+  }
+
+  @keyframes float-levitation {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+
+  .animate-float-levitation {
+    animation: float-levitation 7s ease-in-out infinite;
+  }
+
+  .mask-bottom-fade-character {
+    -webkit-mask-image: linear-gradient(
+      to top,
+      transparent 0%,
+      rgba(0, 0, 0, 0.5) 12%,
+      black 24%,
+      black 100%
+    );
+    mask-image: linear-gradient(
+      to top,
+      transparent 0%,
+      rgba(0, 0, 0, 0.5) 12%,
+      black 24%,
+      black 100%
+    );
+  }
+}

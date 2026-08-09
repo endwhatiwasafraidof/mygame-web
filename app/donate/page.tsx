@@ -6,10 +6,10 @@ import { GlowBadge } from "@/components/ui/glow-badge";
 
 export default function DonatePage() {
   return (
-    <>
+    <div className="scrollbar-thin">
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-shell px-4 md:px-6">
-          <Card className="overflow-hidden p-8 md:p-10" glow>
+        <div className="mx-auto max-w-shell px-4 md:px-6 scrollbar-thin">
+          <Card className="overflow-hidden p-8 md:p-10 scrollbar-thin" glow>
             <div className="grid gap-8 xl:grid-cols-[1fr_0.72fr]">
               <div className="space-y-6">
                 <GlowBadge>Поддержка проекта</GlowBadge>
@@ -24,7 +24,7 @@ export default function DonatePage() {
                 </div>
               </div>
 
-              <div className="grid gap-4">
+              <div className="grid gap-4 scrollbar-thin">
                 <Card className="p-5">
                   <div className="flex items-start gap-4">
                     <Gift className="mt-1 h-5 w-5 text-orange-200" />
@@ -54,6 +54,6 @@ export default function DonatePage() {
       </section>
 
       <DonateForm />
-    </>
+    </div>
   );
 }

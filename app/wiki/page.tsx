@@ -12,10 +12,10 @@ type WikiPageProps = {
 
 export default function WikiPage({ searchParams }: WikiPageProps) {
   return (
-    <>
+    <div className="scrollbar-thin">
       <section className="py-16 md:py-24">
-        <div className="mx-auto max-w-shell px-4 md:px-6">
-          <Card className="overflow-hidden p-8 md:p-10">
+        <div className="mx-auto max-w-shell px-4 md:px-6 scrollbar-thin">
+          <Card className="overflow-hidden p-8 md:p-10 scrollbar-thin">
             <div className="grid gap-8 xl:grid-cols-[1fr_0.7fr]">
               <div className="space-y-6">
                 <GlowBadge>Внутренняя база знаний</GlowBadge>
@@ -30,7 +30,7 @@ export default function WikiPage({ searchParams }: WikiPageProps) {
                 </div>
               </div>
 
-              <div className="grid gap-4">
+              <div className="grid gap-4 scrollbar-thin">
                 <Card className="p-5">
                   <div className="flex items-start gap-4">
                     <Compass className="mt-1 h-5 w-5 text-orange-200" />
@@ -60,6 +60,6 @@ export default function WikiPage({ searchParams }: WikiPageProps) {
       </section>
 
       <WikiCategories selectedSlug={searchParams?.category} />
-    </>
+    </div>
   );
 }

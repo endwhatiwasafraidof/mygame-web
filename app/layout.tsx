@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Manrope, Orbitron } from "next/font/google";
 
+import { GlobalBackground } from "@/components/GlobalBackground";
 import { Footer } from "@/components/layout/footer";
 import { Navbar } from "@/components/layout/navbar";
 import { brandFaviconSrc, brandName } from "@/lib/constants/branding";
@@ -32,8 +33,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ru">
-      <body className={`${orbitron.variable} ${manrope.variable} font-sans`}>
+    <html lang="ru" className="scrollbar-thin">
+      <body className={`${orbitron.variable} ${manrope.variable} font-sans scrollbar-thin`}>
+        <GlobalBackground />
         <div className="relative min-h-screen">
           <Navbar />
           <main>{children}</main>

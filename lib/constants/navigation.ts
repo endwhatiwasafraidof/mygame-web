@@ -13,7 +13,7 @@ export const navigationItems: NavigationItem[] = [
   { href: "/", label: "Главная" },
   { href: "/#news", label: "Новости" },
   { href: "/wiki", label: "Wiki" },
-  { href: "https://forum.example.com", label: "Форум", external: true },
+  { href: "https://forum.mygame.com", label: "Форум", external: true },
 ];
 
 export const navbarActions: NavigationItem[] = [
