@@ -30,13 +30,13 @@
 Production-ready релиз (`v1.0.0`) веб-интерфейса игрового проекта **MyGame**. Проект разработан с упором на современный игровой минимализм, высокую производительность и плавный UX/UI с glass-эффектами, фирменным оранжевым акцентом `orange-500` и киберспортивной эстетикой.
 
 * **🌐 Demo (Vercel):** [Посмотреть сайт вживую]([ВСТАВЬТЕ_ССЫЛКУ_НА_VERCEL_ЗДЕСЬ])
-* **📦 Репозиторий (GitHub):** [GitHub Repository]([ВСТАВЬТЕ_ССЫЛКУ_НА_GITHUB_ЗДЕСЬ])
+* **📦 Репозиторий (GitHub):** [GitHub Repository]([https://github.com/endwhatiwasafraidof/mygame-web])
 
 ---
 
 ## 👨‍💻 Разработчик
 
-* **Разработчик:** Балтовский Александр ([GitHub профиль]([ВСТАВЬТЕ_ССЫЛКУ_НА_GITHUB_ПРОФИЛЬ_ЗДЕСЬ]))
+* **Разработчик:** Балтовский Александр ([GitHub профиль]([https://github.com/endwhatiwasafraidof])
 
 ---
 
@@ -110,27 +110,29 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
    npm install
 Запустите сервер для разработки (HMR):
 
-Bash
-npm run dev
+  ```bash
+  npm run dev
 Сайт будет доступен по адресу: http://localhost:3000
 
 Сборка и запуск в production-режиме:
 
-Bash
-npm run build
-npm run start
+  ```bash
+  npm run build
+  npm run start
+
 📦 NPM Скрипты
-npm run dev — запуск режима разработки.
+  ```bash
+  npm run dev — запуск режима разработки.
 
-npm run build — оптимизированная production-сборка.
+  npm run build — оптимизированная production-сборка.
 
-npm run start — запуск готовой сборки через Node HTTP-сервер.
+  npm run start — запуск готовой сборки через Node HTTP-сервер.
 
-npm run lint — проверка кода линтером ESLint.
+  npm run lint — проверка кода линтером ESLint.
 
-npm run check — CI-скрипт проверки типов (TypeScript Strict) + линтинг.
+  npm run check — CI-скрипт проверки типов (TypeScript Strict) + линтинг.
 
-npm run test — запуск unit-тестов через Vitest.
+  npm run test — запуск unit-тестов через Vitest.
 
 📂 Структура проекта
 Plaintext
