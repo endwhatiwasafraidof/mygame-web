@@ -123,16 +123,12 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 📦 NPM Скрипты
   ```bash
   npm run dev — запуск режима разработки.
-
   npm run build — оптимизированная production-сборка.
-
   npm run start — запуск готовой сборки через Node HTTP-сервер.
-
   npm run lint — проверка кода линтером ESLint.
-
   npm run check — CI-скрипт проверки типов (TypeScript Strict) + линтинг.
-
   npm run test — запуск unit-тестов через Vitest.
+
 
 📂 Структура проекта
 Plaintext
