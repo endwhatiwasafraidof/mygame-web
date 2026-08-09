@@ -135,7 +135,7 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 
 ---
 
-📂 Структура проекта
+## 📂 Структура проекта
 Plaintext
 mygame-web/
 ├─ app/                              # Next.js App Router
