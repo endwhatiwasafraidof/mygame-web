@@ -36,7 +36,7 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 
 ## 👨‍💻 Разработчик
 
-* **Разработчик:** Балтовский Александр ([GitHub профиль](https://github.com/endwhatiwasafraidof)
+* **Разработчик:** Балтовский Александр ([GitHub профиль])(https://github.com/endwhatiwasafraidof)
 
 ---
 
