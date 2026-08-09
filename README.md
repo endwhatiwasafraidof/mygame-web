@@ -133,6 +133,7 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 | `npm run check` | **CI / Type Check** | Строгая проверка типов TypeScript (`tsc`) совместно с линтингом. |
 | `npm run test` | **Unit Tests** | Запуск модульных тестов в окружении jsdom через Vitest. |
 
+---
 
 📂 Структура проекта
 Plaintext
