@@ -30,13 +30,13 @@
 Production-ready релиз (`v1.0.0`) веб-интерфейса игрового проекта **MyGame**. Проект разработан с упором на современный игровой минимализм, высокую производительность и плавный UX/UI с glass-эффектами, фирменным оранжевым акцентом `orange-500` и киберспортивной эстетикой.
 
 * **🌐 Demo (Vercel):** [Посмотреть сайт вживую]([ВСТАВЬТЕ_ССЫЛКУ_НА_VERCEL_ЗДЕСЬ])
-* **📦 Репозиторий (GitHub):** [GitHub Repository](https://github.com/endwhatiwasafraidof)
+* **📦 Репозиторий (GitHub):** [GitHub Repository](https://github.com/endwhatiwasafraidof/mygame-web)
 
 ---
 
 ## 👨‍💻 Разработчик
 
-* **Разработчик:** Балтовский Александр ([GitHub профиль]([https://github.com/endwhatiwasafraidof])
+* **Разработчик:** Балтовский Александр ([GitHub профиль](https://github.com/endwhatiwasafraidof)
 
 ---
 
