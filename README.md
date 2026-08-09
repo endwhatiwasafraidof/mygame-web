@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="[ВСТАВЬТЕ_ССЫЛКУ_НА_VERCEL_ЗДЕСЬ]" target="_blank">
+  <a href="https://mygame-web-two.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Vercel-Live_Demo-000000?style=for-the-badge&logo=vercel" alt="Vercel Live Demo">
   </a>
 </p>
