@@ -108,8 +108,7 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 1. Клонируйте репозиторий и установите зависимости:
    ```bash
    npm install
-
-   Запустите сервер для разработки (HMR):Bashnpm run dev
+Запустите сервер для разработки (HMR):Bashnpm run dev
 Сайт будет доступен по адресу: http://localhost:3000Сборка и запуск в production-режиме:Bashnpm run build
 npm run start
 📦 NPM СкриптыДля управления проектом и запуска различных задач используйте следующие команды:КомандаОписаниеНазначениеnpm run devDevelopmentЗапуск сервера разработки с мгновенной перезагрузкой (HMR).npm run buildProduction BuildСоздание оптимизированной production-сборки проекта.npm run startProduction StartЗапуск готовой собранной версии на Node.js сервере.npm run lintCode LintingПроверка кода линтером ESLint (next/core-web-vitals).npm run checkCI / Type CheckСтрогая проверка типов TypeScript (tsc) совместно с линтингом.npm run testUnit TestsЗапуск модульных тестов в окружении jsdom через Vitest.📂 Структура проектаPlaintextmygame-web/
