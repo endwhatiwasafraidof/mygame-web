@@ -120,14 +120,18 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
   npm run build
   npm run start
 
-📦 NPM Скрипты
-  ```bash
-  npm run dev — запуск режима разработки.
-  npm run build — оптимизированная production-сборка.
-  npm run start — запуск готовой сборки через Node HTTP-сервер.
-  npm run lint — проверка кода линтером ESLint.
-  npm run check — CI-скрипт проверки типов (TypeScript Strict) + линтинг.
-  npm run test — запуск unit-тестов через Vitest.
+## 📦 NPM Скрипты
+
+Для управления проектом и запуска различных задач используйте следующие команды:
+
+| Команда | Описание | Назначение |
+| :--- | :--- | :--- |
+| `npm run dev` | **Development** | Запуск сервера разработки с мгновенной перезагрузкой (HMR). |
+| `npm run build` | **Production Build** | Создание оптимизированной production-сборки проекта. |
+| `npm run start` | **Production Start** | Запуск готовой собранной версии на Node.js сервере. |
+| `npm run lint` | **Code Linting** | Проверка кода линтером ESLint (`next/core-web-vitals`). |
+| `npm run check` | **CI / Type Check** | Строгая проверка типов TypeScript (`tsc`) совместно с линтингом. |
+| `npm run test` | **Unit Tests** | Запуск модульных тестов в окружении jsdom через Vitest. |
 
 
 📂 Структура проекта
