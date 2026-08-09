@@ -1,6 +1,3 @@
-Вот обновленный вариант README.md, куда добавлены ссылки на деплой в Vercel и информация о разработчике (Балтовский Александр):
-
-Markdown
 <div align="center">
 
 # 🎮 MyGame — Web Interface
