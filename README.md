@@ -1,9 +1,18 @@
+Вот обновленный вариант README.md, куда добавлены ссылки на деплой в Vercel и информация о разработчике (Балтовский Александр):
+
+Markdown
 <div align="center">
 
 # 🎮 MyGame — Web Interface
 
 <p align="center">
   <b>Современный, быстрый и адаптивный веб-интерфейс для игрового SAMP-проекта MyGame (Stories & Legacy).</b>
+</p>
+
+<p align="center">
+  <a href="[ВСТАВЬТЕ_ССЫЛКУ_НА_VERCEL_ЗДЕСЬ]" target="_blank">
+    <img src="https://img.shields.io/badge/Vercel-Live_Demo-000000?style=for-the-badge&logo=vercel" alt="Vercel Live Demo">
+  </a>
 </p>
 
 <p align="center">
@@ -22,6 +31,15 @@
 ## 🚀 О проекте
 
 Production-ready релиз (`v1.0.0`) веб-интерфейса игрового проекта **MyGame**. Проект разработан с упором на современный игровой минимализм, высокую производительность и плавный UX/UI с glass-эффектами, фирменным оранжевым акцентом `orange-500` и киберспортивной эстетикой.
+
+* **🌐 Demo (Vercel):** [Посмотреть сайт вживую]([ВСТАВЬТЕ_ССЫЛКУ_НА_VERCEL_ЗДЕСЬ])
+* **📦 Репозиторий (GitHub):** [GitHub Repository]([ВСТАВЬТЕ_ССЫЛКУ_НА_GITHUB_ЗДЕСЬ])
+
+---
+
+## 👨‍💻 Разработчик
+
+* **Разработчик:** Балтовский Александр ([GitHub профиль]([ВСТАВЬТЕ_ССЫЛКУ_НА_GITHUB_ПРОФИЛЬ_ЗДЕСЬ]))
 
 ---
 
@@ -93,3 +111,55 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 1. Клонируйте репозиторий и установите зависимости:
    ```bash
    npm install
+Запустите сервер для разработки (HMR):
+
+Bash
+npm run dev
+Сайт будет доступен по адресу: http://localhost:3000
+
+Сборка и запуск в production-режиме:
+
+Bash
+npm run build
+npm run start
+📦 NPM Скрипты
+npm run dev — запуск режима разработки.
+
+npm run build — оптимизированная production-сборка.
+
+npm run start — запуск готовой сборки через Node HTTP-сервер.
+
+npm run lint — проверка кода линтером ESLint.
+
+npm run check — CI-скрипт проверки типов (TypeScript Strict) + линтинг.
+
+npm run test — запуск unit-тестов через Vitest.
+
+📂 Структура проекта
+Plaintext
+mygame-web/
+├─ app/                              # Next.js App Router
+│  ├─ layout.tsx                     # Root Layout · метаданные · Navbar/Footer
+│  ├─ globals.css                    # Tailwind директивы · кастомный скроллбар
+│  ├─ page.tsx                       # Главная страница
+│  ├─ donate/page.tsx                # Страница доната
+│  └─ wiki/page.tsx                  # База знаний (Wiki)
+├─ components/
+│  ├─ layout/                        # Компоненты шапки и подвала
+│  ├─ sections/                      # Секции страниц (hero, donate, news и др.)
+│  ├─ ui/                            # UI-компоненты (кнопки, модалки, карточки)
+│  └─ GlobalBackground.tsx           # Фиксированный фон со слайдером
+├─ lib/                              # Константы, мок-данные и утилиты
+├─ __tests__/                        # Vitest unit-тесты
+├─ public/image/                     # Графические ассеты (1-5.png, girl.png)
+├─ tailwind.config.ts                # Конфигурация Tailwind и дизайн-токенов
+└─ tsconfig.json                     # Настройки TypeScript
+🔐 Безопасность
+Внешние ссылки: Все внешние ссылки (Форум, соцсети) используют атрибуты target="_blank" rel="noopener noreferrer".
+
+Конфиденциальность: Файлы окружения (.env*) изолированы через .gitignore.
+
+Безопасность рендеринга: Отсутствуют небезопасные методы (dangerouslySetInnerHTML, eval), используется чистый подход через компоненты React и Tailwind JIT.
+
+📄 Лицензия
+Proprietary / Closed Source © 2026 MyGame. Все права на исходный код, дизайн, графические ассеты и контент принадлежат проекту MyGame. Копирование, распространение или коммерческое использование без письменного разрешения запрещено.
