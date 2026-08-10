@@ -108,25 +108,26 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 1. Клонируйте репозиторий и установите зависимости:
    ```bash
    npm install
-Запустите сервер для разработки (HMR):Bashnpm run dev
-Сайт будет доступен по адресу: http://localhost:3000Сборка и запуск в production-режиме:Bashnpm run build
-npm run start
-📦 NPM СкриптыДля управления проектом и запуска различных задач используйте следующие команды:КомандаОписаниеНазначениеnpm run devDevelopmentЗапуск сервера разработки с мгновенной перезагрузкой (HMR).npm run buildProduction BuildСоздание оптимизированной production-сборки проекта.npm run startProduction StartЗапуск готовой собранной версии на Node.js сервере.npm run lintCode LintingПроверка кода линтером ESLint (next/core-web-vitals).npm run checkCI / Type CheckСтрогая проверка типов TypeScript (tsc) совместно с линтингом.npm run testUnit TestsЗапуск модульных тестов в окружении jsdom через Vitest.📂 Структура проектаPlaintextmygame-web/
-├─ app/                             # Next.js App Router
-│  ├─ layout.tsx                    # Root Layout · метаданные · Navbar/Footer
-│  ├─ globals.css                   # Tailwind директивы · кастомный скроллбар
-│  ├─ page.tsx                      # Главная страница
-│  ├─ donate/page.tsx               # Страница доната
-│  └─ wiki/page.tsx                 # База знаний (Wiki)
-├─ components/
-│  ├─ layout/                       # Компоненты шапки и подвала
-│  ├─ sections/                     # Секции страниц (hero, donate, news и др.)
-│  ├─ ui/                           # UI-компоненты (кнопки, модалки, карточки)
-│  └─ GlobalBackground.tsx          # Фиксированный фон со слайдером
-├─ lib/                             # Константы, мок-данные и утилиты
-├─ __tests__/                       # Vitest unit-тесты
-├─ public/image/                    # Графические ассеты (1-5.png, girl.png)
-├─ tailwind.config.ts               # Конфигурация Tailwind и дизайн-токенов
-└─ tsconfig.json                    # Настройки TypeScript
-🔐 БезопасностьВнешние ссылки: Все внешние ссылки (Форум, соцсети) используют атрибуты target="_blank" rel="noopener noreferrer".Конфиденциальность: Файлы окружения (.env*) изолированы через .gitignore.Безопасность рендеринга: Отсутствуют небезопасные методы (dangerouslySetInnerHTML, eval), используется чистый подход через компоненты React и Tailwind JIT.
-📄 ЛицензияProprietary / Closed Source © 2026 Балтовский Александр. Все права на исходный код, архитектуру, дизайн и разработку принадлежат автору (Балтовский Александр). Использование проекта разрешено только при условии сохранения оригинальной подписи разработчика на сайте. Копирование, распространение или коммерческое использование без письменного разрешения автора строго запрещено.
+
+2. Запустите сервер для разработки (HMR):
+
+    ```bash
+    npm run dev
+Сайт будет доступен по адресу: http://localhost:3000
+
+3. Сборка и запуск в production-режиме:
+
+    ```bash
+    npm run build
+    npm run start
+
+Для управления проектом и запуска различных задач используйте следующие команды:
+
+| Команда | Описание | Назначение |
+| :--- | :--- | :--- |
+| `npm run dev` | **Development** | Запуск сервера разработки с мгновенной перезагрузкой (HMR). |
+| `npm run build` | **Production Build** | Создание оптимизированной production-сборки проекта. |
+| `npm run start` | **Production Start** | Запуск готовой собранной версии на Node.js сервере. |
+| `npm run lint` | **Code Linting** | Проверка кода линтером ESLint (`next/core-web-vitals`). |
+| `npm run check` | **CI / Type Check** | Строгая проверка типов TypeScript (`tsc`) совместно с линтингом. |
+| `npm run test` | **Unit Tests** | Запуск модульных тестов в окружении jsdom через Vitest. |
