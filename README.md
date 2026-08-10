@@ -131,3 +131,23 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 | `npm run lint` | **Code Linting** | Проверка кода линтером ESLint (`next/core-web-vitals`). |
 | `npm run check` | **CI / Type Check** | Строгая проверка типов TypeScript (`tsc`) совместно с линтингом. |
 | `npm run test` | **Unit Tests** | Запуск модульных тестов в окружении jsdom через Vitest. |
+
+📂 Структура проекта
+Plaintext
+mygame-web/
+├─ app/                             # Next.js App Router
+│  ├─ layout.tsx                    # Root Layout · метаданные · Navbar/Footer
+│  ├─ globals.css                   # Tailwind директивы · кастомный скроллбар
+│  ├─ page.tsx                      # Главная страница
+│  ├─ donate/page.tsx               # Страница доната
+│  └─ wiki/page.tsx                 # База знаний (Wiki)
+├─ components/
+│  ├─ layout/                       # Компоненты шапки и подвала
+│  ├─ sections/                     # Секции страниц (hero, donate, news и др.)
+│  ├─ ui/                           # UI-компоненты (кнопки, модалки, карточки)
+│  └─ GlobalBackground.tsx          # Фиксированный фон со слайдером
+├─ lib/                             # Константы, мок-данные и утилиты
+├─ __tests__/                       # Vitest unit-тесты
+├─ public/image/                    # Графические ассеты (1-5.png, girl.png)
+├─ tailwind.config.ts               # Конфигурация Tailwind и дизайн-токенов
+└─ tsconfig.json                    # Настройки TypeScript
