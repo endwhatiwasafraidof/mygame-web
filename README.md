@@ -152,6 +152,9 @@ mygame-web/
 ├─ public/image/                    # Графические ассеты (1-5.png, girl.png)
 ├─ tailwind.config.ts               # Конфигурация Tailwind и дизайн-токенов
 └─ tsconfig.json                    # Настройки TypeScript
+```
+
+---
 
 ## 🔐 Безопасность
 
