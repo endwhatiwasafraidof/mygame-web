@@ -131,6 +131,7 @@ Production-ready релиз (`v1.0.0`) веб-интерфейса игрово�
 | `npm run lint` | **Code Linting** | Проверка кода линтером ESLint (`next/core-web-vitals`). |
 | `npm run check` | **CI / Type Check** | Строгая проверка типов TypeScript (`tsc`) совместно с линтингом. |
 | `npm run test` | **Unit Tests** | Запуск модульных тестов в окружении jsdom через Vitest. |
+
 ## 📂 Структура проекта
 
 ```text
@@ -153,7 +154,7 @@ mygame-web/
 └─ tsconfig.json                    # Настройки TypeScript
 
 
-🔐 Безопасность
+## 🔐 Безопасность
 Внешние ссылки: Все внешние ссылки (Форум, соцсети) используют атрибуты target="_blank" rel="noopener noreferrer".
 
 Конфиденциальность: Файлы окружения (.env*) изолированы через .gitignore.
