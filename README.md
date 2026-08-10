@@ -152,8 +152,7 @@ mygame-web/
 ├─ public/image/                    # Графические ассеты (1-5.png, girl.png)
 ├─ tailwind.config.ts               # Конфигурация Tailwind и дизайн-токенов
 └─ tsconfig.json                    # Настройки TypeScript
-
- ```🔐 Безопасность
+🔐 Безопасность
 Внешние ссылки: Все внешние ссылки (Форум, соцсети) используют атрибуты target="_blank" rel="noopener noreferrer".
 
 Конфиденциальность: Файлы окружения (.env*) изолированы через .gitignore.
