@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <a href="[ВСТАВЬТЕ_ССЫЛКУ_НА_VERCEL_ЗДЕСЬ]" target="_blank">
+  <a href="https://mygame-web-two.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Vercel-Live_Demo-000000?style=for-the-badge&logo=vercel" alt="Vercel Live Demo">
   </a>
 </p>
@@ -29,7 +29,7 @@
 
 Production-ready релиз (`v1.0.0`) веб-интерфейса игрового проекта **MyGame**. Проект разработан с упором на современный игровой минимализм, высокую производительность и плавный UX/UI с glass-эффектами, фирменным оранжевым акцентом `orange-500` и киберспортивной эстетикой.
 
-* **🌐 Demo (Vercel):** [Посмотреть сайт вживую]([ВСТАВЬТЕ_ССЫЛКУ_НА_VERCEL_ЗДЕСЬ])
+* **🌐 Demo (Vercel):** [Посмотреть сайт вживую](https://mygame-web-two.vercel.app/)
 * **📦 Репозиторий (GitHub):** [GitHub Repository](https://github.com/endwhatiwasafraidof/mygame-web)
 
 ---
